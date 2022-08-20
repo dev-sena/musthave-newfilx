@@ -2,8 +2,6 @@
 
 비전공자를 위한 첫 코딩 챌린지를 읽고 하는 클론 코딩
 
-<a href="https://devsenalee.github.io/musthave-newfilxx/" target="_blank">https://devsenalee.github.io/musthave-newfilxx/</a>
-
 <!-- <div>
     <h5>**220802 회고**<h5>
     <h6>책을 읽고 클론 코딩을 시작했다. netfilx의 사이트를 클론아닌 클론 코딩? 이였는데 form 태그는 많이 써봐서 어렵지 않았지만, header의 background-img를 화면 크기별로 예쁘게 조절될 수 있도록 설정하는게 조금 힘들었다. 그래도 나름 만족스럽게 잘 해놓은 것 같다.<h6>
