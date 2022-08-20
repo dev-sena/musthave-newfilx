@@ -1,0 +1,246 @@
+/****** 전체설정 ******/
+.mypage-profile__text,
+.continue-title,
+.heart-title {
+  color: var(--lavender);
+  font-weight: 800;
+}
+
+.mypage-main__continue,
+.horizontalline,
+.mypage-main__heart {
+  margin: 0 auto;
+}
+
+.horizontalline {
+  border-bottom: 1px solid var(--dark-lavender);
+  margin: 25px auto;
+  width: 90%;
+}
+
+/***** 프로필 부분 설정 ******/
+.mypage-main__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.mypage-profile__text {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.mypage-profile__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myprofile-container_box {
+  transition: transform 0.2s ease-in-out;
+}
+.myprofile-container_box:hover {
+  transform: scale(1.1);
+}
+.myprofile-img {
+  width: 100px;
+  border-radius: 20px;
+  margin: 0 15px;
+  margin-bottom: 5px;
+}
+.myprofile-name {
+  color: white;
+  text-align: center;
+}
+
+/***** mypage-main__continue 설정*****/
+.mypage-main__continue {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.continue-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.continue-container {
+  display: flex;
+  flex-direction: row;
+}
+.continue-container__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--box-background);
+  margin-right: 15px;
+  padding: 20px 20px 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.continue-container__box:hover {
+  transform: scale(1.2);
+}
+.continue-box__text {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.continue-box__img {
+  width: 200px;
+  border-radius: 15px;
+}
+
+/***** mypage-main__heart 설정 *****/
+.mypage-main__heart {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.heart-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.heart-container {
+  display: flex;
+  flex-direction: column;
+}
+.heart-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--box-background);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.heart-box__left {
+  display: flex;
+  align-items: center;
+}
+.heart-box__info-title,
+.heart-box__info-text {
+  margin-left: 18px;
+  color: white;
+}
+.heart-box__info-title {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.heart-box__info-text {
+  font-size: 12px;
+}
+.heart-box__btn {
+  color: var(--dark-lavender);
+  background-color: var(--lavender);
+  border: none;
+  padding: 15px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.heart-box__btn:hover {
+  animation: moviemypagebtn 0.8s ease-in-out infinite;
+}
+/***** mypage-main__heart 버튼 애니메이션 설정 *****/
+@keyframes moviemypagebtn {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(10px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+/***** mypage-main__heart 이미지 설정 *****/
+.heart-box__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.img1 {
+  background-image: url("https://www.ghibli.jp/gallery/ponyo049.jpg");
+}
+.img2 {
+  background-image: url("https://w.namu.la/s/0603c54b54b7df773e079ed14448a130e63b0b07dc508a08a92c8ee079fefdb8fb0289c85bb1809c6f985dcfe0b8b386202f0d44b84f45d3eca7fc4f673f5ab439f1df7626083b116f7a976fa31b8b548970d15302f86e7f2b36e18968e8039c05ff2bb981be3fd78e1719e45f3bd9bd");
+}
+.img3 {
+  background-image: url("https://w.namu.la/s/298640dda5ca4a2ed97740f3cf762305aa05067c272b61f1171ef5cc471f1f6e24c1af104f336c4ab9a5bb890ac4b8ea7d2bf77b1bb183dc88ab696a9bde60ba6461bd34365361f8e8871fa40547b98c8db1d9c52f3b13ae07fb8ce09d2fb2250629282e49f6867f749a79393197541a");
+}
+
+@media screen and (min-width: 320px) and (max-width: 550px) {
+  .horizontalline {
+    margin: 15px auto;
+    width: 90%;
+  }
+
+  /***** 프로필 부분 설정 ******/
+  .mypage-main__profile {
+    margin-top: 60px;
+  }
+  .mypage-profile__text {
+    font-size: 18px;
+    margin-bottom: 11px;
+  }
+  .myprofile-img {
+    width: 60px;
+    border-radius: 12px;
+    margin: 10px 15px;
+    margin-bottom: 5px;
+  }
+
+  /***** mypage-main__continue 설정*****/
+  .mypage-main__continue {
+    width: 90%;
+  }
+  .continue-title {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .continue-container__box {
+    margin-right: 5px;
+    padding: 10px 10px 9px;
+  }
+  .continue-box__text {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+  .continue-box__img {
+    width: 118px;
+    border-radius: 10px;
+  }
+
+  /***** mypage-main__heart 설정 *****/
+  .heart-title {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .heart-box {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .heart-box__info-title,
+  .heart-box__info-text {
+    margin-left: 10px;
+  }
+  .heart-box__info-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .heart-box__info-text {
+    font-size: 10px;
+  }
+  .heart-box__btn {
+    padding: 8px 11px;
+  }
+  /***** mypage-main__heart 이미지 설정 *****/
+  .heart-box__img {
+    width: 70px;
+    height: 70px;
+  }
+}

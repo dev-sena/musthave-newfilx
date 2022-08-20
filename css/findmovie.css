@@ -1,0 +1,133 @@
+.findmovie-body {
+  height: 120vh;
+}
+
+/*****movie-main의 background image 설정*****/
+.movie-main {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgb(28, 25, 34, 1) 0%,
+      rgb(28, 25, 34, 0) 15% 85%,
+      rgb(28, 25, 34, 0.7) 99%
+    ),
+    url("https://www.ghibli.jp/gallery/chihiro034.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1085px) and (max-width: 1312px) {
+  .movie-main {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 1313px) {
+  .movie-main {
+    height: 115vh;
+  }
+}
+
+/*****movie-main의 title 설정*****/
+.movie-main__title {
+  color: white;
+  width: 40%;
+  font-size: 6vw;
+  font-weight: 800;
+  font-family: "Gaegu", cursive;
+  -webkit-text-stroke: 0.175vw rgb(171, 97, 180);
+  text-shadow: 0.5vw 0.5vw 0.5vw rgb(8, 8, 8);
+  position: absolute;
+  top: 16vw;
+  left: 8.5vw;
+}
+@media screen and (min-width: 1300px) {
+  /*화면이 커져도 movie title이 두줄을 유지하도록 함*/
+  .movie-main__title {
+    width: 35%;
+  }
+}
+
+/*****movie-main의 title아래 작품 설명에 대한 설정*****/
+.movie-main__text {
+  width: 40%;
+  color: white;
+  font-size: 1.3vw;
+  line-height: 2.4vw;
+  position: absolute;
+  top: 30vw;
+  left: 8.5vw;
+}
+
+/*****movie-main의 작품 설명 버튼에 대한 설정*****/
+.movie-main__btn {
+  position: absolute;
+  top: 36vw;
+  left: 8.5vw;
+  display: flex;
+}
+.movie-main__btn-container {
+  margin-right: 2.5vw;
+  display: flex;
+  align-items: center;
+}
+
+.btn-input {
+  padding: 0.7vw 1.8vw;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3vw;
+  font-weight: 800;
+  cursor: pointer;
+}
+.btn-input__1:hover {
+  background-color: rgb(180, 180, 180);
+}
+.btn-input__2 {
+  background-color: rgba(109, 109, 109, 0.8);
+  color: white;
+}
+.btn-input__2:hover {
+  background-color: rgba(109, 109, 109, 0.4);
+}
+.btn-input__icon-input2 {
+  border: 0.2vw solid white;
+  border-radius: 50%;
+  margin-right: 0.6vw;
+  padding: 0.1vw 0.7vw;
+}
+.fa-play {
+  margin-right: 0.6vw;
+}
+/*****movie recomammed관련 설정*****/
+.movie-reco {
+  position: absolute;
+  top: 58vw;
+  left: 3.5vw;
+}
+.movie-reco__container {
+  margin-bottom: 5vw;
+  background-color: var(--box-background);
+  padding: 1.6vw 1.2vw;
+  border-radius: 10px;
+}
+
+.reco__title {
+  color: white;
+  font-size: 2vw;
+  font-weight: 800;
+}
+.reco__movie-img {
+  margin-top: 1vw;
+}
+.reco__movie-img > img {
+  border-radius: 8px;
+  width: 28.5vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.reco__movie-img > img:hover {
+  transform: scale(1.2);
+}

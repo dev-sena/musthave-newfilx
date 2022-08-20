@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/7c33dc4bb4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Newflix | Find Movie</title>
+  </head>
+
+  <body class="findmovie-body">
+    <div class="header-nav">
+      <div class="nav-left findmovie__nav-left">
+        <a href="selectprofile.html">
+          <div class="nav-left__text">Newflix</div>
+        </a>
+      </div>
+
+      <div class="nav-right">
+        <div>
+          <input
+            type="text"
+            class="nav-rihgt__input"
+            placeholder="사람, 제목, 장르"
+          />
+          <button
+            class="nav-rihgt__btn"
+            value="off"
+            onclick="openCloseInput();"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass fa-2x nav-rihgt__btn-icon"
+            ></i>
+          </button>
+        </div>
+
+        <div>
+          <button class="nav-right__alarm" id="modal-btn">
+            <i class="fa-solid fa-bell fa-2x nav-right__alarm-icon"></i>
+          </button>
+          <div class="modal-btn">
+            <div class="modal-container">
+              <div class="modal-box">
+                <div class="modal-box__img"></div>
+                <div class="modal-box__content">
+                  <div class="modal-box__title">신규컨텐츠</div>
+                  <div class="modal-box__text">블라블라블라</div>
+                  <div class="modal-box__day">2일전</div>
+                </div>
+              </div>
+              <div class="modal-box">
+                <div class="modal-box__img"></div>
+                <div class="modal-box__content">
+                  <div class="modal-box__title">신규컨텐츠2</div>
+                  <div class="modal-box__text">블라블라블라</div>
+                  <div class="modal-box__day">1주전</div>
+                </div>
+              </div>
+              <div class="modal-box">
+                <div class="modal-box__img"></div>
+                <div class="modal-box__content">
+                  <div class="modal-box__title">신규컨텐츠3</div>
+                  <div class="modal-box__text">블라블라블라</div>
+                  <div class="modal-box__day">2주전</div>
+                </div>
+              </div>
+              <div class="modal-box">
+                <div class="modal-box__img"></div>
+                <div class="modal-box__content">
+                  <div class="modal-box__title">신규컨텐츠4</div>
+                  <div class="modal-box__text">블라블라블라</div>
+                  <div class="modal-box__day">3주전</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="./mypage.html" class="nav-rihgt__profile">
+          <img
+            src="https://i.pinimg.com/564x/6b/b8/75/6bb875c8c2e7132657de4fced0198c60.jpg"
+            alt="profil image"
+            class="nav-right__profileimg"
+          />
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section class="movie-main">
+        <div class="movie-main__title">센과 치히로의 행방불명</div>
+        <div class="movie-main__text">
+          마녀가 지배하는 신비한 세계에 발을 들여놓은 치히로. 마녀에게 거역하는
+          자는 동물로 변하게 되는데...
+        </div>
+        <div class="movie-main__btn">
+          <div class="movie-main__btn-container">
+            <button
+              type="button"
+              onclick="window.open('https://www.netflix.com/kr/title/60023642?source=naver');"
+              class="btn-input btn-input__1"
+            >
+              <i class="fa-solid fa-play fa-lg btn-input__icon"></i>재생
+            </button>
+          </div>
+          <div class="movie-main__btn-input">
+            <button type="button" class="btn-input btn-input__2">
+              <span class="btn-input__icon-input2">i</span>상세 정보
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="movie-reco">
+        <div class="movie-reco__container">
+          <div class="reco__title">지금 흥행하고 있는 컨텐츠</div>
+          <div class="reco__movie-img">
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcQErO1PxtB5hVBEglxp5-fox-pdojedg4t6cUJuA34a1mFs4ui-phkFUD1BFQGWXwKBe0i1Jf85E3IAuARObzlm23eLQ-3DOW_3EqTLBe-hxDyxv5AdcjU-LBUEPHc_s2ZcwBTpPjIwXfbvyCwVqbsySve3j51WJFZe3XkUcte9v781yg_4Is6ppZolWGe_fErJ.webp?r=d2e"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABc2mV8K-3aRDDDOPv2e_y4rh9HJaD42ITEosiWFCGDs3ssSDfjSmX5J4GGdIq9zRJMtoB8n0Eww2VeOmVOndK5AeDrem5fQTjd6I7B8u0BFw3vnrg5TFuiDBlwNWiXQMbXL7Kb0mMAYv03d9gqGSBh-S649zOc4RnpYVncQKN9jw3WCcX084OZQhLqiUU8xeS21C.webp?r=8c7"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcAPotxuEJiuRjuck_mRQz6A83R6_441O4jrl-3N5xZgQdF6uPjVgn2bUdG2mg2CPX9a1krZubPQjF69jf3LisgH33x9H7m0rsp8l6Viil5wLGeJOMi3cSdHdZ9778jK4vThzeC_xWcr0QKVFdTOVMq3No_qwengPeQ.webp?r=12d"
+            />
+          </div>
+        </div>
+        <div class="movie-reco__container">
+          <div class="reco__title">한국 드라마</div>
+          <div class="reco__movie-img">
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfiEjRp7nWAEjmwhn32EHyWHMOyQOyhD_4V7kjUhI3qz2akchU94y2ftnztVkdbcaKf5KeqQdzpFaujBELdldJM7NCDjonhVndJjgRvu5tLPqTpXXdsLNmduVqBVbOfSOaW6McW5lEc7eCYST56U6uMMoLKnolPv_15l85CAp0jxsnyZuwEzTM-flS4SdVJbTp-k.webp?r=691"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZmSmJsdmHoWsTsDnC3afQxPn470IR5osSI4sC2ctblHLWtt1nD8_8QJdUbIGJz09dsotijzyzeWZ61n0Ss7nE7iQ5mqFx4ITK4.webp?r=32e"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfSN7DqeKCkBkNUokg3Afs7ie5DJy3LhRIvmbfm9CJ_MhtJKhTOJuNAcX5ahAcznyFzvPHlvv5-1rteijJ0fmbx2HpatqHY6wus.webp?r=708"
+            />
+          </div>
+        </div>
+        <div class="movie-reco__container">
+          <div class="reco__title">아시아 드라마</div>
+          <div class="reco__movie-img">
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaInjBexLRPxEKLTNyTN1xhwr7MrW_6R2IRmI6H61MppTKBRp6keZHd7bRQ61DLKajTYqjdciV41pk6o9y3eQ-FsSJH3L10gwAo.webp?r=e6c"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABezf_bebcwYZV82nvD3q8ZHCGif9FAE7b7GANoSGQxg8uCHYryQiLBv5n7sC4cmZYko31We5OdTvAoU-6Kfvb0GZf2Luxri1iIA5-jmmxND5cYzfdCEyYyz4X_mrLmF_ZVGp.jpg?r=5c4"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQcRn5EUIR07jD8OXu9cjfcIHbXczfI3sAP-KqFvqv6FdU5VRrbbLsZi2e4mVX_7mmWdJi0yRxpjfkX55FoXL5BKXNYl6C_3kMw.webp?r=bf4"
+            />
+          </div>
+        </div>
+        <div class="movie-reco__container">
+          <div class="reco__title">할리우드 영화</div>
+          <div class="reco__movie-img">
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqiQUm9VqZm546EmoDCuwSO5VY5sHDfUA9aJyYNAcWNZAjMnV6V33LpUVhmTYhCgMt3StTM_t_J0RU-6zwoKVg1D0hJ9keFToQ.webp?r=987"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABch70fs69g_1JDqhgL5_ktpaa6KENxHRE058WeGV4dr6TpO2xUt5DcPyrsnMB7GdNoqQXLOQ6mdTo8R40sp-tvbgE9-3OAgCjG4.webp?r=7b7"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfpZ0aYN8PPnGlw-NvBb8yA63WvYSPI9tDkhGLEQgKiaWC0xRXUKBEJZca9GMoMkMTB8GOIYZCZVHAzcx5Yorx2XUGIVaXmFuno.webp?r=fc8"
+            />
+          </div>
+        </div>
+        <div class="movie-reco__container">
+          <div class="reco__title">애니메이션 영화</div>
+          <div class="reco__movie-img">
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWcKKo4yyqNrcp48-1I_MnLbR0UjSdJu5YwIi6O5lOpCEUy91CjuGpgq7oRJU_tDc52ATyg-6wvXb28zolU1AxmEO_sRIibnGcY.webp?r=fbb"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWsQKdCEJkkjrTKOPSmN21DZmQzN6W6-Jhgw3Ogvu-LfLXGsUOoRanVSrCMWjUufxCyB9UxdUnSYeeO2YtiExAcorpXGsgcgq7g.webp?r=edc"
+            />
+            <img
+              src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa6wn5rb1vCuj_20hGaHbGtkqrSvbP3qn5CZ52Wp7d6UCczL_hjmpBeoEd9RLkqZHiYCODXFf9G6DFHifS8eD5KE5p7zIQJ44O8.webp?r=455"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="js/header-nav.js"></script>
+  </body>
+</html>

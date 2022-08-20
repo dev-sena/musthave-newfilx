@@ -1,0 +1,99 @@
+/*****select-profile의 body에만 스크롤 *****/
+.body-selectprofile {
+  overflow: hidden;
+}
+
+/***** 전체설정 *****/
+.select-profile {
+  margin-top: 230px;
+}
+
+/***** profile-text 설정 *****/
+.profile-text {
+  color: var(--lavender);
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/***** profile-container 설정 *****/
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/***** profile-container_box  설정 ******/
+.profile-container_box {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+.profile-container_box:hover {
+  transform: scale(1.2);
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 30px;
+}
+.profile-name {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  /***** 전체설정 *****/
+  .select-profile {
+    margin-top: 130px;
+  }
+  /***** profile-text 설정 *****/
+  .profile-text {
+    font-size: 17px;
+  }
+  /***** profile-container_box  설정 ******/
+  .profile-container_box {
+    padding: 30px;
+  }
+  .profile-img {
+    width: 100px;
+    border-radius: 20px;
+  }
+  .profile-name {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  /***** 전체설정 *****/
+  .select-profile {
+    margin-top: 220px;
+  }
+  /***** profile-text 설정 *****/
+  .profile-text {
+    font-size: 20px;
+  }
+  /***** profile-container_box  설정 ******/
+  .profile-container_box {
+    padding: 30px;
+  }
+  .profile-img {
+    width: 120px;
+  }
+  .profile-name {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /***** 전체설정 *****/
+  .select-profile {
+    margin-top: 300px;
+  }
+}

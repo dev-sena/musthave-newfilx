@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css?after" type="text/css" />
+
+    <title>Newflix | Login</title>
+  </head>
+  <body class="body-index">
+    <div class="login-header"></div>
+
+    <main class="login-main">
+      <section>
+        <div class="login-main__title">Newflix</div>
+        <div class="login-main__text">
+          새로운 OTT 뉴플릭스 등장! <br />지금 가입하면 무료!
+        </div>
+      </section>
+
+      <section class="form">
+        <form action="selectprofile.html" method="get" class="login-form">
+          <label for="login-form__text" hidden>ID</label>
+          <input
+            type="text"
+            class="login-form__text login-form__input"
+            id="login-form__text"
+            placeholder="ID"
+            required
+            autocomplete="off"
+          />
+          <label for="login-form__pw" hidden>PW</label>
+          <input
+            type="password"
+            class="login-form__pw login-form__input"
+            id="login-form__pw"
+            placeholder="PASSWORD"
+            required
+            autocomplete="off"
+          />
+          <input type="submit" value="접속하기" class="login-form__btn" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

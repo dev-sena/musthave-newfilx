@@ -1,0 +1,49 @@
+/*폰트 설정*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
+
+/*css 기본설정 리셋*/
+@import url("./reset.css");
+
+/*components*/
+@import url("./header-nav.css");
+
+/*screens*/
+@import url("./index.css");
+@import url("./selectprofile.css");
+@import url("./findmovie.css");
+@import url("./mypage.css");
+
+/*root*/
+:root {
+  --light-lavender: #e5dff7;
+  --lavender: #cbc0ec;
+  --dark-lavender: #69579c;
+  --deep-dark-lavender: #42346d;
+  --main-background: rgb(28, 25, 34);
+  --box-background: rgba(77, 77, 77, 0.2);
+}
+
+/*기타 전체 설정*/
+body,
+html {
+  width: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  background-color: var(--main-background);
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+/*****footer 설정*****/
+.footer-mypage {
+  color: rgb(94, 94, 94);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 1.2vw;
+  padding-bottom: 2vw;
+}
